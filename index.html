@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vikinger profile</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <link rel="stylesheet" href="4th.css"> -->
+ <style>
+   
+        .hero-image {
+        background-image: url("./img/Vikinger\ _\ Profile_files/01.jpg");
+        
+        height: 300px;
+      
+      
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        border-top-left-radius:10px ;
+        border-top-right-radius:10px ;
+      }
+      .single-header{
+          padding:300px
+      }
+      
+      
+      .single-header1,.single-header2,.single-header3,.single-header4,.single-header5{
+          float:left;
+          width:80px;
+          /* top:400px; */
+          height:70px;
+          padding-left:10px;
+          font-size: 20px;
+          color:gray;
+          padding-top: 5px;
+      } 
+      .header-table{
+          padding-top: 20px;
+          padding-left: 100px;
+          padding-right: 150px;
+          background-color:white;
+      
+      }
+      ul{
+          margin-left:70px;
+       margin-right: 70px;
+       margin-top: none;
+       padding:0;
+       list-style: none;
+       display:inline-flex;
+      }
+      ul li a{
+          display: inline-block;
+       padding-left: 50px;
+       padding-right:50px;
+       background-color:none;
+       color:grey;
+       text-decoration: none;
+       
+      }
+      
+      ul li a:hover{
+              color:white;
+              background-color:white;
+              cursor: pointer;
+      
+          }
+          .hero-about-area{
+              background-color: white;
+              width:400px;
+              font-size: 20px;
+              color:#6c757d;
+          }
+          .hero-post{
+              background-color: white;
+              width:500px;
+             
+             
+              
+          }
+          .hero-about-area,.hero-post,.hero-stream{
+              float:left;
+              border-left: 1px solid white;
+              margin-left: 20px;
+              background-color: white;
+             
+              
+              
+          }
+          
+          .hero-post-img,.hero-post-text{
+              float:left;
+              
+          }
+          
+          .comment{
+              display: inline-flex;
+              
+              
+          }
+          .single-post-react,.comment{
+              float:left;
+              width:50%
+      
+          }
+          .react1,.react2,.react3{
+              float:left;
+              width:33%;
+              
+          }
+          .stream-img{
+              background-color: white;
+      
+      
+          }
+          .post{
+              top:800px;
+              left:0;
+      
+          }
+          .service-badge,.service-stream,.service-post{
+              float:left;
+              border-left: 1px solid white;
+              /* margin-left: 40px; */
+           background-color: white;
+           
+          margin-top: 10px;
+          padding-left:10px ;
+          width:250px;
+          margin-left:20px;
+          
+           }
+          .service-stream{
+              background-color: white;
+              padding-left: 15px;
+              
+            
+              height:430px;
+          }
+          .service-badge
+          {
+              padding-right: 250px;
+              width:100px;
+              border-left: 1px solid white;
+             padding-left: 50px;
+             padding-top: 0px;
+             
+            
+             
+          }
+        
+          .service-post{
+              border-left: 1px solid white;
+              width:245px;
+              height: 420px;
+              padding-left: 4px;
+              padding-right: 250px;
+             
+              
+          }
+          .hero-stream{
+              width: 220px;
+              padding-bottom: 220px;
+              background-color: white;
+              /* padding-right: 100px; */
+              
+              
+          }
+          .stats-friend,.stats-post,.stats-twitter{
+              float:left;
+              border-left: 1px solid white;
+              /* margin-left: 40px; */
+        
+          width:250px;
+          margin-left:3px;
+          
+          }
+          .stats-friend{
+             
+              width:400px;
+              border-left: 1px solid white;
+             background-color: white;
+             padding-top: 0px;
+             
+             
+          }
+          .stats-post{
+              border-left: 1px solid white;
+              width:300px;
+              padding-left:10px ;
+             
+             padding-top: 5px;
+             height:520px
+          }
+          .stats-twitter{
+              width: 200px;
+              margin-left: 240px;
+              margin-right: 200px;
+              background-color:white;
+              height: 250px;
+              padding-bottom: 400px;
+              margin-top: 10px;
+              
+              
+              
+          }
+          .add{
+              padding-left: 40px;
+              padding-right: 40px;
+              background-color: #6610f2;
+              color:white;;
+              border:none;
+              
+              border-radius: 10px;
+          }
+          .support-video,.support-post,.support-group{
+              float:left;
+              background-color: white;
+              width: 300px;
+              
+              
+          }
+          .support-video{
+              width:430px;
+              background-color: white;
+              height:700px;
+              /* top:3000px; */
+              padding-top: 0px;
+              /* margin-top: 100px; */
+              
+             
+            
+             
+           } 
+          
+          .support-post{
+              
+              border-left: 1px solid white;
+              width:500px; 
+              margin-top: 200px;
+              
+          }
+          .support-group{
+              padding-bottom: 100px;
+          }
+          .react,.reply,.time{
+              float:right;
+              width: 100px;
+          }
+          .blog-p,.blog-post,.latest-item{
+              float:left;
+              width: 300px;
+            
+              
+          }
+          .button{
+              background-color:#6610f2;
+              border:none;
+              border-radius: 5px;
+              color:white;
+          } 
+ </style>
+   
+</head>
+<body>
+    <div class="main"style="background-color: #615dfa;">
+        <ul>
+           
+           <b>VIKINGER</b>
+            <li><a href="http://" target="_blank"style="color:white;" >Home </a></li>
+            <li><a href="http://" target="_blank" style="color:white;" >Careers</a></li>
+            <li><a href="http://" target="_blank" style="color:white;">Faqs</a></li>
+            <li><a href="http://" target="_blank" style="color:white;">TERMS </a></li>
+            <li><a href="http://" target="_blank" >
+                <select name="" id="" style="display:inline-block ;color:#888888">
+               
+                   <option value="" disabled selected>... </option>
+                   <option value="">about us</option>
+                   <option value="">our blog</option>
+                
+                </select></a>
+                   
+               </li>
+               <li><input type="text" name="" id="" placeholder="search here your group"><i class="fa-solid fa-magnifying-glass"></i></li>
+               
+               <li><i class="fa-solid fa-briefcase-blank"></i></li>
+               <li><i class="fa-solid fa-face-smile"></i></li>
+               <li><i class="fa-light fa-messages"></i></li>
+               <li><i class="fa-regular fa-bell"></i></li>
+            
+            
+        </ul>
+   <div class="hero-image">
+    <header class="header-area">
+        
+        <div class="single-header">
+            <div class="single-header1">
+                <h5>930</h5>
+                <p>Posts</p>
+            </div>
+            <div class="single-header2">
+                <h5>82</h5>
+                <p>Friend</p>
+            </div>
+            <div class="single-header3">
+                <h5>5.7k</h5>
+                <p>Visit</p>
+            </div>
+            <div class="single-header4">
+                <img src="./img/Vikinger _ Profile_files/usa.png" alt="" width="30"height="25"style="margin-top:25px">
+            </div>
+               
+            
+            
+            <div class="single-header5">
+                 <img src="./img/Vikinger _ Profile_files/01(2).jpg"width="80"height="100" alt="" class="profile"style="border-radius:50%;"> 
+                <div>
+                    <h4>5.7k</h4>
+                  <a href="http://"style="text-decoration:none;color:black;">WWW.GAMEHUNTRESS.COM</a>
+                </div>
+            </div>
+            <div class="single-header5">
+                <table class="header-table">
+                    <tr>
+                        <td>
+                            <button class="add">add friend</button>
+                           
+                        </td>
+                        <td> <button class="add">send message</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td >
+                            <i class="fa-brands fa-facebook"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                          
+                        </td>
+                        <td>
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-youtube"></i> 
+                            <i class="fa-brands fa-twitch"></i>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+             
+        </div>
+        <nav>
+            <ul id="menu">
+              <li class=menu-li><a href="">About</a></li>
+              <li class=menu-li><a href="">Timeline</a></li>
+              <li class=menu-li><a href="">Friends</a></li>
+              <li class=menu-li><a href="">Groups</a></li>
+              <li class=menu-li><a href="">Photo</a></li>
+              <li class=menu-li><a href="">Budges</a></li>
+              <li class=menu-li><a href="">streams</a></li>
+              <li class=menu-li><a href="">Blog</a></li>
+            </ul>
+        </nav>
+</header>
+<!-- ===============section start======== -->
+<section class="hero-area">
+    <!-- ===============hero-about-area start======== -->
+        <div class="hero-about-area">
+            <h4>
+                About Me
+            </h4>
+            <p>Hi! My name is Marina but some people may know me as <br>GameHuntress! I have a Twitch channel where I stream, play<br>and review all the newest games.</p>
+            <table>
+                <tr>
+                    <td>Joined</td>
+                    <td>March 26th, 2017</td>
+                </tr>
+                <tr>
+                    <td>City</td>
+                    <td>Los Angeles, California</td>
+                </tr>
+                <tr>
+                    <td>Country</td>
+                    <td>United States</td>
+                </tr>
+                <tr>
+                   <td>Age</td>
+                   <td>32 Years</td>
+                </tr>
+                <tr>
+                    <td>Web</td>
+                    <td><a href="http://" style="color:#23d2e2;text-decoration:none;" >www.gamehuntress.com</a></td>
+                </tr>
+            </table>
+        </div>
+        
+        <!-- ===============hero-about-area end======== -->
+    <!-- ===============hero-post start======== -->
+    <div class="hero-post">
+        <!-- ===============single-post start======== -->
+        <div class="single-post">
+               
+               
+            <table>
+                <tr>
+                    <td rowspan='2' valign='center'><img src="./img/Vikinger _ Profile_files/01(2).jpg"width="30"height="50" alt="" class="profile"style="border-radius:50%;"></td>
+                    <td>Marina Valentine</td>
+                </tr>
+                <tr>
+                    <td>5 hours ago</td>
+                </tr>
+            </table>
+            <p>Hi to all! Remember that today I'll be livestreaming along with @NekoBebop the new character of the brand new Xenowatch patch "Anya Darkness". See you there!</p>
+
+            <div class="hero-post-img">
+            <img src="./img/Vikinger _ Profile_files/06.jpg " height="200"width="200" alt="">
+            </div>
+            <div class="hero-post-text"style="width:250px">
+                GameHuntress on <a href="http://">Twitch</a>
+                games for both new and old consolest.Join her in this epic quest!
+                <h6>TWITCH.TV</h6>
+            </div>
+                
+        </div>
+         <!-- ===============single-post end ======== -->
+         <!-- ===============single-button start ======== -->
+
+            <div class="single-post-button">
+                <ul>
+                    <li><button class="button">Stream</button></li>
+                    <li><button class="button">Xenowatch</button></li>
+                    <li><button class="button">Gaming</button></li>
+                    <li><button class="button">Twitch</button></li>
+                    
+                </ul>
+            </div>
+             <!-- ===============single-button end ======== -->
+             
+             <!-- ===============single-post-react start ======== -->
+
+             <div class="single-post-react ">
+                <img src="./img/Vikinger _ Profile_files/like.png"width="20"height="25" alt="">
+                <img src="./img/Vikinger _ Profile_files/love.png" width="20"height="25"alt="">
+                <img src="./img/Vikinger _ Profile_files/wow.png" width="20"height="25"alt="">
+                <span>7 participant</span>
+            </div>
+            <!-- ===============single-post-react end ======== -->
+
+             <!-- ===============comment start ======== -->
+            <div class="comment">
+                <p>14 Participants</p>
+                <p>3 Comments</p>
+                <p>0 Shares</p>
+            </div>
+            <!-- ===============react start ======== -->
+        <div class="react">
+            <div class="react1">
+                <button><i class="fa-solid fa-thumbs-up"></i></button>
+            </div>
+            <div class="react2">
+                <button><i class="fa-solid fa-message"></i></button>
+            </div>
+            <div class="react3">
+                <button><i class="fa-solid fa-share-nodes"></i></button>
+            </div>
+        </div>
+         <!-- ===============react end ======== -->
+             <!-- ===============comment end ======== -->
+        </div>
+        <!-- ===============hero-post end ======== -->
+   
+            
+    
+<div class="hero-stream">
+    <div class="stream-text">
+            <h3>Stream Box</h3>
+    </div>
+    <div class="stream-img">
+           
+        <img src="./img/Vikinger _ Profile_files/01-social.png" alt="">
+        <i class="fa-solid fa-gear" style="padding-left:100px;"></i>
+        <i class="fa-solid fa-expand"></i>
+        <a href="">Twitch</a>
+        <p>I'm Playing Athena’s Goddess Story...</p>
+        <h6>@GameHuntress</h6>
+    </div>
+</div>
+</div>  
+</section>
+<div class="service">
+   <div class="service-badge">
+    
+    <h4>Badges 13</h4>
+    <img src="./img/Vikinger _ Profile_files/11.jpg" alt=""> 
+   </div>
+    <div class="service-post">
+        <table>
+            <tr>
+                <td rowspan='2' valign='center'><img src="./img/Vikinger _ Profile_files/01(2).jpg"width="30"height="50" alt="" class="profile"style="border-radius:50%;"></td>
+                <td>Marina Valentine</td>
+            </tr>
+            <tr>
+                <td>5 hours ago</td>
+            </tr>
+        </table>
+        <p>I have great news to share with you all! I've been officially made a game streaming verified partner by Streamy http://lyt.ly/snej25. What does this mean? I'll be uploading new content every day, improving the quality and I'm gonna have access to games a month before the official release.</p>
+        <p>This is a dream come true, thanks to all for the support!!!</p>
+          <!-- ===============single-post-react start ======== -->
+
+          <div class="single-post-react ">
+            <img src="./img/Vikinger _ Profile_files/like.png"width="20"height="25" alt="">
+            <img src="./img/Vikinger _ Profile_files/love.png" width="20"height="25"alt="">
+            <img src="./img/Vikinger _ Profile_files/wow.png" width="20"height="25"alt="">
+            <span>7 participant</span>
+        </div>
+        <!-- ===============single-post-react end ======== -->
+
+         <!-- ===============comment start ======== -->
+        <div class="comment">
+            <p style="padding-left:110px">14 Participants</p>
+            <p style="padding-left:20px">3 Comments</p>
+            <p style="padding-left:20px">0 Shares </p>
+           
+        </div>
+       
+        <!-- ===============react start ======== -->
+    <div class="react">
+        <div class="react1">
+            <button><i class="fa-solid fa-thumbs-up"></i></button>
+        </div>
+        <div class="react2">
+            <button><i class="fa-solid fa-message"></i></button>
+        </div>
+        <div class="react3">
+            <button><i class="fa-solid fa-share-nodes"></i></button>
+        </div>
+    </div>
+</div>
+
+    <div class="service-stream">
+        <div class="stream-text">
+                <h3>Photos 74</h3>
+        </div>
+        <div class="stream-img">
+               
+            <img src="./img/Vikinger _ Profile_files/photo.png"height="150px"width="200" alt="">
+            
+        </div>
+    </div>
+</div>
+</div>
+<div class="stats-area">
+    <div class="stats-friend">
+     <h5>Friends 82</h5>
+     <h5>Sarah Diamond</h5>
+     <h5>Destroy Dex</h5>
+     <h5>Destroy Dex</h5>
+    </div>
+    <div class="stats-post">
+        <div class="hero-post">
+            <!-- ===============single-post start======== -->
+            <div class="single-post">
+                   
+                   
+                <table>
+                    <tr>
+                        <td rowspan='2' valign='center'><img src="./img/Vikinger _ Profile_files/01(2).jpg"width="30"height="50" alt="" class="profile"style="border-radius:50%;"></td>
+                        <td>Marina Valentine</td>
+                    </tr>
+                    <tr>
+                        <td>5 hours ago</td>
+                    </tr>
+                </table>
+                <p>Here's a sneak peek of the official box cover art for Machine Wasteland II! Remember that I'll be having a stream showing a preview tommorrow at 9PM PCT!</p>
+    
+                <div class="hero-post-img">
+               <img src="./img/Vikinger _ Profile_files/04(1).jpg"height="200"width="500" alt="">
+                </div>
+                    
+            </div>
+             <!-- ===============single-post end ======== -->
+             <!-- ===============single-button start ======== -->
+    
+                
+                 <!-- ===============single-button end ======== -->
+                 
+                 <!-- ===============single-post-react start ======== -->
+    
+                 <div class="single-post-react ">
+                    <img src="./img/Vikinger _ Profile_files/like.png"width="20"height="25" alt="">
+                    <img src="./img/Vikinger _ Profile_files/love.png" width="20"height="25"alt="">
+                    <img src="./img/Vikinger _ Profile_files/wow.png" width="20"height="25"alt="">
+                    <span>7 participant</span>
+                </div>
+                <!-- ===============single-post-react end ======== -->
+    
+                 <!-- ===============comment start ======== -->
+                <div class="comment">
+                    <p>14 Participants</p>
+                    <p>3 Comments</p>
+                    <p>0 Shares</p>
+                </div>
+                <!-- ===============react start ======== -->
+            <div class="react">
+                <div class="react1">
+                    <button><i class="fa-solid fa-thumbs-up"></i></button>
+                </div>
+                <div class="react2">
+                    <button><i class="fa-solid fa-message"></i></button>
+                </div>
+                <div class="react3">
+                    <button><i class="fa-solid fa-share-nodes"></i></button>
+                </div>
+                
+            </div>
+            <hr>
+           
+             <!-- ===============react end ======== -->
+                 <!-- ===============comment end ======== -->
+                 <div class="comment-section">
+                
+                    <p><img src="./img/Vikinger _ Profile_files/phantom-s.png" alt=""><b>Neko Bebop</b> It's always a pleasure to do this streams with you! If we have at least half the fun than last time it will be an incredible success!</p>
+                     
+                     <img src="./img/Vikinger _ Profile_files/like.png" width="20"height="25" alt="">4
+                     
+                     <p class="time">15 min ago</p>
+                     <p class="reply">reply</p>
+                        <p class="react">react</p>
+                     
+                     </div> 
+                 <div class="comment-section" style="padding-top:10px">
+                    <p><img src="./img/Vikinger _ Profile_files/phantom-s.png" alt=""><b>Destroy Dex</b> YEAHHH!! @MarinaValentine I really enjoyed your last stream and it also was really funny! Can't wait!</p>
+                     
+                     <img src="./img/Vikinger _ Profile_files/like.png" width="20"height="25" alt="">4
+                     
+                     <p class="time">15 min ago</p>
+                     <p class="reply">reply</p>
+                        <p class="react">react</p>
+                     
+                     </div> 
+                 <div class="comment-section">
+                    <p><img src="./img/Vikinger _ Profile_files/phantom-s.png" alt=""><b>Sarah Diamond</b>That sounds awesome Marina! And also thanks a lot for the art sneak peek! I went to the GameCon last week and had a great time playing the game's open demo.</p>
+                     
+                     <img src="./img/Vikinger _ Profile_files/like.png" width="20"height="25" alt="">4
+                     
+                     <p class="time">15 min ago</p>
+                     <p class="reply">reply</p>
+                        <p class="react">react</p>
+                     <input type="text" name="" id="" placeholder="your reply">
+                     </div> 
+                     
+                     <!--==========dddf  -->
+             
+                    <!-- ===== -->
+            </div>
+
+             
+    </div>
+    <div class="stats-twitter">
+        <h4>Twitter Feed</h4>
+       
+        <table>
+            <tr>
+                <td rowspan='2' valign='center'><a href=""><img src="./img/Vikinger _ Profile_files/traveller-s.png" alt=""> </a></td>
+                <td>Marina Valentine</td>
+            </tr>
+            <tr>
+                <td>5 hours ago</td>
+            </tr>
+        </table>
+        <p>@dr @iloAnalytics Hi @dr ! We're trying to reach you via DM here, is it OK or do you have an email where we can send you a question? Thanks!</p>
+        
+        <h4>Twitter Feed</h4>
+       
+        <table>
+            <tr>
+                <td rowspan='2' valign='center'><a href=""><img src="./img/Vikinger _ Profile_files/traveller-s.png" alt=""> </a></td>
+                <td>Marina Valentine</td>
+            </tr>
+            <tr>
+                <td>5 hours ago</td>
+            </tr>
+        </table>
+        <p>@dr @iloAnalytics Hi @dr ! We're trying to reach you via DM here, is it OK or do you have an email where we can send you a question? Thanks!</p>
+        <h4>Twitter Feed</h4>
+       
+        <table>
+            <tr>
+                <td rowspan='2' valign='center'><a href=""><img src="./img/Vikinger _ Profile_files/traveller-s.png" alt=""> </a></td>
+                <td>Marina Valentine</td>
+            </tr>
+            <tr>
+                <td>5 hours ago</td>
+            </tr>
+        </table>
+        <p>@dr @iloAnalytics Hi @dr ! We're trying to reach you via DM here, is it OK or do you have an email where we can send you a question? Thanks!</p>
+
+       
+    </div>
+</div> 
+<div class="support-area">
+    <div class="support-video">
+        <h5>video</h5>
+        <iframe width="250" height="200" src="https://www.youtube.com/embed/6ErE27RNLDQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" style="border-radius: 20px;"></iframe>
+        <iframe width="250" height="200" src="https://www.youtube.com/embed/6ErE27RNLDQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" style="border-radius: 20px;"></iframe>
+        <iframe width="250" height="200" src="https://www.youtube.com/embed/6ErE27RNLDQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" style="border-radius: 20px;"></iframe>
+    </div>
+    <div class="support-post">
+        <div class="single-post">
+               
+               
+            <table>
+                <tr>
+                    <td rowspan='2' valign='center'><img src="./img/Vikinger _ Profile_files/01(2).jpg"width="30"height="50" alt="" class="profile"style="border-radius:50%;"></td>
+                    <td>Marina Valentine</td>
+                </tr>
+                <tr>
+                    <td>5 hours ago</td>
+                </tr>
+            </table>
+            <div class="img">
+            <p>Tomorow I'll be livestreaming along with @DestroyDex on my Youtube channel. We are gonna do a spedrun of Super Mochi Bros 3!</p>
+            <img src="./img/Vikinger _ Profile_files/50.jpg" width="500" height="250"alt="">
+        </div>
+
+          
+                
+        </div>
+         <!-- ===============single-post end ======== -->
+         <!-- ===============single-button start ======== -->
+
+            <div class="single-post-button">
+                <ul>
+                    <li><button class="button">Stream</button></li>
+                    <li><button class="button">Xenowatch</button></li>
+                    <li><button class="button">Gaming</button></li>
+                    <li><button class="button">Twitch</button></li>
+                    
+                </ul>
+            </div>
+             <!-- ===============single-button end ======== -->
+             
+             <!-- ===============single-post-react start ======== -->
+
+             <div class="single-post-react ">
+                <img src="./img/Vikinger _ Profile_files/like.png"width="20"height="25" alt="">
+                <img src="./img/Vikinger _ Profile_files/love.png" width="20"height="25"alt="">
+                <img src="./img/Vikinger _ Profile_files/wow.png" width="20"height="25"alt="">
+                <span>7 participant</span>
+            </div>
+            <!-- ===============single-post-react end ======== -->
+
+             <!-- ===============comment start ======== -->
+            <div class="comment">
+                <p>14 Participants</p>
+                <p>3 Comments</p>
+                <p>0 Shares</p>
+            </div>
+            <!-- ===============react start ======== -->
+        <div class="react">
+            <div class="react1">
+                <button><i class="fa-solid fa-thumbs-up"></i></button>
+            </div>
+            <div class="react2">
+                <button><i class="fa-solid fa-message"></i></button>
+            </div>
+            <div class="react3">
+                <button><i class="fa-solid fa-share-nodes"></i></button>
+            </div>
+        </div>
+    </div>
+</div>
+ <div class="support-group">
+    <h5>Groups 7</h5>
+    <ol >
+        <li style="display:inline-flex ;"><a href="">newest</a></li>
+        <li style="display:inline-flex"><a href="">popular</a></li>
+        <li style="display:inline-flex;"><a href="">active</a></li>
+    </ol>
+    <table>
+        <tr>
+            <td rowspan='2' valign='center'><img src="./img/Vikinger _ Profile_files/warrior-s.png"width="30"height="40" alt="" class="profile"style="border-radius:50%;"></td>
+            <td>Marina Valentine</td>
+        </tr>
+        <tr>
+           
+            <td>5 hours ago   <i class="fa-solid fa-user-large"></i></td>
+        </tr>
+       
+    </table>
+    <table>
+        <tr>
+            <td rowspan='2' valign='center'><img src="./img/Vikinger _ Profile_files/ncreature-s.png"width="30"height="40" alt="" class="profile"style="border-radius:50%;"></td>
+            <td>Marina Valentine</td>
+        </tr>
+        <tr>
+           
+            <td>5 hours ago   <i class="fa-solid fa-user-large"></i></td>
+        </tr>
+       
+    </table>
+    <table>
+        <tr>
+            <td rowspan='2' valign='center'><img src="./img/Vikinger _ Profile_files/traveller-s.png"width="30"height="40" alt="" class="profile"style="border-radius:50%;"></td>
+            <td>Marina Valentine</td>
+        </tr>
+        <tr>
+           
+            <td>5 hours ago   <i class="fa-solid fa-user-large"></i></td>
+        </tr>
+       
+    </table>
+    <table>
+        <tr>
+            <td rowspan='2' valign='center'><img src="./img/Vikinger _ Profile_files/ncreature-s.png"width="30"height="40" alt="" class="profile"style="border-radius:50%;"></td>
+            <td>Marina Valentine</td>
+        </tr>
+        <tr>
+           
+            <td>5 hours ago   <i class="fa-solid fa-user-large"></i></td>
+        </tr>
+       
+    </table>
+    
+    <table>
+        <tr>
+            <td rowspan='2' valign='center'><img src="./img/Vikinger _ Profile_files/scientist-s.png"width="30"height="40" alt="" class="profile"style="border-radius:50%;"></td>
+            <td>Marina Valentine</td>
+        </tr>
+        <tr>
+           
+            <td>5 hours ago   <i class="fa-solid fa-user-large"></i></td>
+        </tr>
+       
+    </table>
+    
+ </div>
+</div>
+ 
+   <div class="blogs">
+    <div class="blog-p">
+    <p></p>
+    </div>
+    <div class="blog-post">
+        
+    </div>
+    <div class="latest-item">
+
+    </div>
+   </div>        
+      
+
+ 
+</body>
+</html>

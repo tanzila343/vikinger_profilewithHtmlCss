@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my portfolio</title>
+<style>
+        *{
+            background-color: rgb(187, 180, 234);
+        }
+        a:link {
+  color: rgb(4, 4, 93);
+  text-decoration: none;
+  font-weight: 900px;
+ font-family:Georgia, 'Times New Roman', Times, serif;
+ 
+}
+
+/* visited link */
+a:visited {
+  color: green;
+}
+
+/* mouse over link */
+a:hover {
+  color: black;
+}
+
+/* selected link */
+a:active {
+  color: blue;
+}
+
+
+</style>
+</head>
+<body>
+    <div class="header">
+         <div class="logo">
+          <img src="./images/logo1.webp" width="200px"height="100px" alt="it is my logo" srcset="">
+         </div>
+         <div class="menu">
+            <a href="#" target="_blank"> Home  </a>
+            <a href="#" target="_blank" > About  </a>
+            <a href="#" target="_blank" > Blog  </a>
+            <a href="#" target="_blank" > Service  </a>
+            <a href="#" target="_blank" > Contact  </a>
+         </div>
+
+    </div>
+    <div class="bio">
+           <div class="about">
+            <img src="./images/owmen.webp" alt="it is my image">
+           </div>
+           <h3>Educational Qualification</h3>
+           <div class="educationalInfo">
+            <table border="1px"style="border-collapse: collapse;text-align:center;">
+                <thead bgcolor="black">
+                    <tr>
+                        <th>Degree</th>
+                        <th>Board/University</th>
+                        <th>Result</th>
+                        <th>Institution</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>SSC</td>
+                        <td>Dhaka</td>
+                        <td>5.00</td>
+                        <td>Bangla Bazar Govt. Girls School</td>
+                        
+                    </tr>
+                    <tr>
+                        <td>HSC</td>
+                        <td>Dhaka</td>
+                        <td>5.00</td>
+                        <td>Begum Badruness Govt. Girls College</td>
+                    </tr>
+                    <tr>
+                        <td>Honors</td>
+                        <td>Dhaka</td>
+                        <td>pending</td>
+                        <td>Jahangirnagar university</td>
+                    </tr>
+
+                </tbody>
+            </table>
+           </div>
+           <br>
+           <div class="video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/wVF8Q-zZz00" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+           </div>
+    </div>
+    <div class="article">
+       <article> <h3> when i am a student of banglabazar school</h3>
+        <small>5 May,2022</small>
+        <span> | </span>
+        <a href="http://">read more</a>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam, eos?</p>
+       </article>
+       <hr>
+       <article> <h3> when i am a student of begum badrunnesa College</h3>
+        <small> 10 july,2022</small>
+        <span> | </span>
+        <a href="http://">read more</a>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam, eos?</p>
+       </article>
+       <hr>
+       <article> <h3>i am a student of ju</h3>
+        <small>5 october,2022</small>
+        <span> | </span>
+        <a href="http://">read more</a>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam, eos?</p>
+       </article>
+       <hr>
+    </div>
+    <div class="contact">
+        <h3>Contact with me</h3>
+        <form action="action_page.php">
+
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name.."><br><br>
+        
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name.."><br><br>
+
+            <label for="email">Email  </label>
+            <input type="email" id="email" name="email" placeholder="Your email.."><br><br>
+             
+            <label for="country">Country</label>
+            <select id="country" name="country">
+              <option value="australia">Australia</option>
+              <option value="canada">Canada</option>
+              <option value="usa">USA</option>
+            </select><br><br>
+        
+            <label for="subject">Subject</label>
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:80px"></textarea><br><br>
+        
+            <input type="submit" value="Submit"><br><br>
+        
+          </form>
+      
+    </div>
+   <div class="footer">&copy; all right reserved</div>
+</body>
+</html>
